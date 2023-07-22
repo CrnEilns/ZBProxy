@@ -1,0 +1,29 @@
+{
+    "Services": [
+        {
+            "Name": "Hypixel",
+            "TargetAddress": "mc.hypixel.net",
+            "TargetPort": 25565,
+            "Listen": 25565,
+            "Flow": "auto",
+            "Minecraft": {
+                "EnableHostnameRewrite": true,
+                "OnlineCount": {
+                    "Max": 114514,
+                    "Online": -1,
+                    "EnableMaxLimit": false
+                },
+                "IgnoreFMLSuffix": true,
+                "NameAccess": {
+                    "Mode": "allow",
+                    "ListTags": ["listA"]
+                },
+                "MotdFavicon": "{DEFAULT_MOTD}",
+                "MotdDescription": "§d{NAME}§e proxy service is working "
+            }
+        }
+    ],
+    "Lists": {
+        "listA": ["CrnEilns_SKY", "LongBlast500"]
+    }
+}
